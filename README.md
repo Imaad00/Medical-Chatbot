@@ -97,6 +97,7 @@ vectorstore/db_faiss/
 Start the Streamlit application:
 
 ```bash
+pipenv shell
 pipenv run streamlit run medibot.py
 ```
 
@@ -107,4 +108,24 @@ pipenv run streamlit run medibot.py
 3. **Vector Store** → Embeddings are indexed in FAISS for efficient retrieval.  
 4. **Retrieval + LLM** → Relevant chunks are retrieved and passed to the Mistral LLM.  
 5. **Conversational Interface** → Streamlit provides a user-friendly chat interface.  
+
+## 💬 Demo Conversation
+
+Here’s an example of how **MediBot** works after indexing the medical encyclopedia:
+
+**User:**  
+👉 *How to cure cancer?*  
+
+**MediBot:**  
+Chemotherapy can cure many cancers, often used in combination with surgery.  
+It is also used along with surgical removal of tumors, such as in the case of **choriocarcinomas**.  
+
+📖 **Source Docs:**  
+- *The Gale Encyclopedia of Medicine, 2nd Edition*, p. 27 – *Cancer therapy, definitive*  
+- *The Gale Encyclopedia of Medicine, 2nd Edition*, p. 131 – *Chemotherapy*  
+- *The Gale Encyclopedia of Medicine, 2nd Edition*, p. 187 – *Choriocarcinoma treatment*  
+
+---
+
+✨ This demo shows how the chatbot retrieves relevant knowledge from the encyclopedia, summarizes it, and cites the original sources for transparency.
 
