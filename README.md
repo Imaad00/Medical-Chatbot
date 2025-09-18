@@ -24,7 +24,6 @@ The chatbot can read and understand medical documents (e.g., *The Gale Encyclope
 ├── data
 │   └── The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf
 ├── medibot.py
-├── medical-chatbot-ppt.pdf
 ├── requirements.txt
 └── vectorstore
     └── db_faiss
